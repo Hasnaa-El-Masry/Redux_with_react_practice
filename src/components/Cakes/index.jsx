@@ -30,9 +30,9 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { buyCake } from '../../redux/cake/cakeActions';
 
-const Cakes = (props) => {
+const Cakes = () => {
 
-    const cakesNum = useSelector(state=>state.cakesNum);
+    const cakesNum = useSelector(state=>state.cake.cakesNum);
     const dispatch = useDispatch();
 
     return (
